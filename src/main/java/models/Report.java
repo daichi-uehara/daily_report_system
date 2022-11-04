@@ -70,6 +70,18 @@ public class Report {
     private LocalDate reportDate;
 
     /**
+     * 出勤時間
+     */
+    @Column(name = JpaConst.REP_COL_ATTENDANCE, nullable = false)
+    private String attendanceTime;
+
+    /**
+     * 退勤時間
+     */
+    @Column(name = JpaConst.REP_COL_LEAVING, nullable = false)
+    private String leavingTime;
+
+    /**
      * 日報のタイトル
      */
     @Column(name = JpaConst.REP_COL_TITLE, length = 255, nullable = false)

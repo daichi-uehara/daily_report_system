@@ -17,6 +17,14 @@
 <input type="date" name="${AttributeConst.REP_DATE.getValue()}" id="${AttributeConst.REP_DATE.getValue()}" value="<fmt:formatDate value='${reportDay}' pattern='yyyy-MM-dd' />" />
 <br /><br />
 
+<label for="${AttributeConst.REP_ATTENDANCE.getValue()}">出勤時間</label><br />
+<input type="time" name="${AttributeConst.REP_ATTENDANCE.getValue()}" id="${AttributeConst.REP_ATTENDANCE.getValue()}" value='${report.attendanceTime}' />
+<br /><br />
+
+<label for="${AttributeConst.REP_LEAVING.getValue()}">退勤時間</label><br />
+<input type="time" name="${AttributeConst.REP_LEAVING.getValue()}" id="${AttributeConst.REP_LEAVING.getValue()}" value='${report.leavingTime}' />
+<br /><br />
+
 <label>氏名</label><br />
 <c:out value="${sessionScope.login_employee.name}" />
 <br /><br />
